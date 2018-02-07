@@ -505,7 +505,7 @@ static void boot_button_task(void* arg)
 
 	rc = shadow_init(&shadowClient, (const char *)certificate_pem_crt_start, (const char *)private_pem_key_start, (const char *)aws_root_ca_pem_start);
 
-	// TODO : get shadow.
+	//get shadow.
 	if(SUCCESS == rc) {
 		ESP_LOGI(TAG_SHADOW, "Getting Shadow...");
 		// last parameter must be set to true
@@ -584,6 +584,12 @@ static void boot_button_task(void* arg)
 	}
 }
 
+/*
+ * @ brief 	This function check receive buffer for AWS IoT periodically.
+ *
+ * It must be checked to receive command from android app client.
+ *
+ * */
 static void aws_yield_task(void* arg) {
 	ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
 	ESP_LOGW(TAG_YIELD, "aws_yield_task start !!");
