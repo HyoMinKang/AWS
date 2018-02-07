@@ -1,11 +1,3 @@
-# Amazon Web Services IoT Examples
-
-These examples are adaptations of some of the [AWS IoT C SDK](https://github.com/aws/aws-iot-device-sdk-embedded-C) examples.
-
-The provisioning/configuration steps for these examples are the same, and are given in this README.
-
-This README also contains some troubleshooting information for common problems found when connecting to AWS IoT.
-
 # Provisioning/Configuration
 
 There are some additional steps that need to be run before you can build this example.
