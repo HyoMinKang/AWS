@@ -22,7 +22,7 @@ You should create Thing named `LEDButton12345670` in the AWS IoT.
 
 ### Thing Shadow
 
-#### This project does not subscribe 'delta' of 'Thing Shadow' for receiving command from Android app client because 'operation key' is included in the command, unlike [thing_shadow example](https://github.com/espressif/esp-idf/tree/master/examples/protocols/aws_iot/thing_shadow). If operation key is included in the `Thing Shadow`, it may be subscribed or published by any clients.
+#### This project does not subscribe `delta` of `Thing Shadow` for receiving command from Android app client because `operation key` is included in the command, unlike [thing_shadow example](https://github.com/espressif/esp-idf/tree/master/examples/protocols/aws_iot/thing_shadow). If operation key is included in the `Thing Shadow`, it may be subscribed or published by any clients.
 
 <pre><code>
 {
@@ -32,7 +32,7 @@ You should create Thing named `LEDButton12345670` in the AWS IoT.
 }
 </code></pre>
 
-### 'LEDButton<DSN>/command' topic
+### `LEDButton<DSN>/command` topic
 
 <pre><code>
 {
@@ -50,7 +50,7 @@ You should create Thing named `LEDButton12345670` in the AWS IoT.
 "operation_data"
 Entered new operation key. This is valid, only if "operation_code" is 2.
 
-### 'LEDButton<DSN>/result' topic
+### `LEDButton<DSN>/result` topic
 
 <pre><code>
 {
@@ -63,9 +63,9 @@ Entered new operation key. This is valid, only if "operation_code" is 2.
 ## Control LED by pressed boot button
 
 1. User press boot button.  
-2. Updated `Thing Shadow' in the AWS IoT.  
+2. Updated `Thing Shadow` in the AWS IoT.  
 3. Changed led status, only if `Thing Shadow` update success.  
-4. Published `LEDButton<DSN>/result` topic to report result to 'Android app client'. 
+4. Published `LEDButton<DSN>/result` topic to report result to `Android app client`. 
 
 ## Control LED by Android app client
 
@@ -80,4 +80,4 @@ Entered new operation key. This is valid, only if "operation_code" is 2.
 2. `Android app client` publish `LEDButton<DSN>/command` topic("operation_code" is 2(Change operation key) at this time) with new operation key to the "operation_data".  
 3. `Thing` change operation key saved in non-volatile storage(nvs), then publish `LEDButton<DSN>/result` topic to report result to Android app client, only if nvs operaion is done successfully.
 
-### As mentioned earlier, this project does not subscribe `delta'
+### As mentioned earlier, [this project does not subscribe `delta`]().
