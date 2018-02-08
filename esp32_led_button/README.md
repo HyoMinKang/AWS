@@ -48,15 +48,15 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 
 ### `LEDButton<DSN>/command` topic
 
->{
->
->	"operaion_code":<Integer>,
->
->	"operation_result":<bool>,
->
->	"result_message":"<String>"
->
->}
+<pre><code>
+
+{
+	"operaion_code":<Integer>,
+	"operation_result":<bool>,
+	"result_message":"<String>"
+}
+
+</code></pre>
 
 ## Control LED by pressed boot button
 
