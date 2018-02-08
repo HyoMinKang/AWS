@@ -7,7 +7,7 @@ To do this, it is used subscribing, publishing and getting/updating shadow funct
 ## Video
 
 You can see the video of the entire projects, including Android app client at the bottom of [this post](http://joondong.tistory.com/61?category=651762).  
-Above blog is written Korean, but I have plan to translate English.
+This blog is written Korean, but I have plan to translate English.
 
 ## Preparations
 
