@@ -6,7 +6,6 @@ You can see details in each project path.
 
 see [this link](https://github.com/espressif/esp-idf/tree/master/examples/protocols/aws_iot) to install private key and certicifate and to configure settings related to AWS IoT
 
-## led_button
+## esp32_led_button
 
-This project communicate with Android app client through AWS IoT and is responsible for `Thing` client.
-
+This project, implemented on ESP-IDF, communicate with Android app client through AWS IoT and is responsible for `Thing` client.
