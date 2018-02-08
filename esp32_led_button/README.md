@@ -27,7 +27,7 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 <pre><code>
 {
 	"reported":{
-		"ledStatus":"\<"bool"\>"
+		"ledStatus":'\<'bool'\>'
 	}
 }
 </code></pre>
