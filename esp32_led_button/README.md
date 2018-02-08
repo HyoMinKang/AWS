@@ -52,7 +52,7 @@ You should create Thing named `LEDButton12345670` in the AWS IoT.
 1 -> LED ON  
 2 -> Change operation key
 
-"operation_data"  
+"operation_data"
 Entered new operation key. This is valid, only if "operation_code" is 2.
 
 ### `LEDButton<DSN>/result` topic
