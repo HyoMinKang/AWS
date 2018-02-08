@@ -42,7 +42,7 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 }
 </code></pre>
 
-++"operation_code"++  
+++&#34;operation_code&#34;++  
 0 -> LED OFF  
 1 -> LED ON  
 2 -> Change operation key
