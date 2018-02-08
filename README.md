@@ -8,4 +8,4 @@ see [this link](https://github.com/espressif/esp-idf/tree/master/examples/protoc
 
 ## esp32_led_button
 
-This project, implemented on ESP-IDF, communicate with Android app client through AWS IoT and is responsible for `Thing` client.
+This project, implemented on ESP-IDF, communicate with [Android app client](https://github.com/JoonDong2/Android/tree/master/AWSLEDButton) through AWS IoT and is responsible for `Thing` client.

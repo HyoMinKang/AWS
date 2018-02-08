@@ -1,6 +1,6 @@
 # AWS LED Button Example
 
-This project, implemented on ESP-IDF, communicate with Android app client through AWS IoT and is responsible for `Thing` client.
+This project, implemented on ESP-IDF, communicate with [Android app client](https://github.com/JoonDong2/Android/tree/master/AWSLEDButton) through AWS IoT and is responsible for `Thing` client.
 
 To do this, subscribing, publishing and getting/updating shadow of the [AWS IoT C SDK](https://github.com/aws/aws-iot-device-sdk-embedded-C) are used.
 
