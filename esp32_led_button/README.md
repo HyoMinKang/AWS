@@ -28,7 +28,7 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 >
 >	"reported":{
 >
->		"ledStatus":<bool>
+>		"ledStatus":\<bool\>
 >
 >	}
 >
@@ -38,11 +38,11 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 
 >{
 >
->	"operation_key":"<String>",
+>	"operation_key":"\<String\>",
 >
->	"operation_code":<Integer>,
+>	"operation_code":\<Integer\>,
 >
->	"operation_data":"<String>"
+>	"operation_data":"\<String\>"
 >
 >}
 
@@ -51,9 +51,9 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 <pre><code>
 
 {
-	"operaion_code":<Integer>,
-	"operation_result":<bool>,
-	"result_message":"<String>"
+	"operaion_code":\<Integer\>,
+	"operation_result":\<bool\>,
+	"result_message":"\<String\>"
 }
 
 </code></pre>
