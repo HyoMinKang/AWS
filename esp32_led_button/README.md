@@ -23,37 +23,34 @@ You should create Thing named `LEDButton12345670` in the AWS IoT.
 ### Thing Shadow
 
 This project does not subscribe `delta` of `Thing Shadow` for receiving command from Android app client because `operation key` include in command, unlike [thing_shadow example](https://github.com/espressif/esp-idf/tree/master/examples/protocols/aws_iot/thing_shadow)
+
 <pre><code>
 {
 	"reported":{
-		"ledStatus":&#62;bool&#62;
+		"ledStatus":&#60;bool&#62;
 	}
 }
 </code></pre>
 
 ### `LEDButton<DSN>/command` topic
 
->{
->
->	"operation_key":"\<String\>",
->
->	"operation_code":\<Integer\>,
->
->	"operation_data":"\<String\>"
->
->}
+<pre><code>
+{
+	"operation_key":"&#60;String&#62",
+	"operation_code":&#60Integer&#62,
+	"operation_data":"&#60String&#62"
+}
+</code></pre>
 
 ### `LEDButton<DSN>/command` topic
 
->{
->
->	"operaion_code":\<Integer\>,
->
->	"operation_result":\<bool\>,
->
->	"result_message":"\<String\>"
->
->}
+<pre><code>
+{
+	"operaion_code":&#60Integer&#62,
+	"operation_result":&#60bool&#62,
+	"result_message":"&#60String&#62"
+}
+</code></pre>
 
 ## Control LED by pressed boot button
 
