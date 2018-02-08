@@ -24,15 +24,13 @@ You should create Thing named `LEDButton12345670` in the AWS IoT.
 
 This project does not subscribe `delta` of `Thing Shadow` for receiving command from Android app client because `operation key` include in command, unlike [thing_shadow example](https://github.com/espressif/esp-idf/tree/master/examples/protocols/aws_iot/thing_shadow)
 
->{
->
->	"reported":{
->
->		"ledStatus":\<bool\>
->
->	}
->
->}
+<pre><code>
+{
+	"reported":{
+		"ledStatus":"\<"bool"\>"
+	}
+}
+</code></pre>
 
 ### `LEDButton<DSN>/command` topic
 
