@@ -22,7 +22,7 @@ You should create Thing named `LEDButton12345670` in the AWS IoT.
 
 ### Thing Shadow
 
-#### This project does not subscribe `delta` of `Thing Shadow` for receiving command from Android app client because `operation key` include in command, unlike [thing_shadow example](https://github.com/espressif/esp-idf/tree/master/examples/protocols/aws_iot/thing_shadow). If operation key include in the `Thing Shadow`, it may be subscribed or published by any clients.
+#### This project does not subscribe 'delta' of 'Thing Shadow' for receiving command from Android app client because 'operation key' is included in the command, unlike [thing_shadow example](https://github.com/espressif/esp-idf/tree/master/examples/protocols/aws_iot/thing_shadow). If operation key is included in the `Thing Shadow`, it may be subscribed or published by any clients.
 
 <pre><code>
 {
@@ -42,7 +42,7 @@ You should create Thing named `LEDButton12345670` in the AWS IoT.
 }
 </code></pre>
 
-"operation_code"
+"operation_code"  
 0 -> LED OFF  
 1 -> LED ON  
 2 -> Change operation key
