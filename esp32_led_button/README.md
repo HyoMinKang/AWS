@@ -19,7 +19,7 @@ To do this, see the README.md in the parent directory.
 
 For this example, you will need to set a Thing Name to `LEDButton12345670` under `make menuconfig` -> `Example Configuration` -> `AWS IoT Thing Name`.
 
-`12345670` following `LEDButton` is device serial numver(DSN). You can chage DSN. If you change DSN, you should change `COMMAND_TOPIC`, `RESULT_TOPIC` in the `ed_button.c`
+`12345670` following `LEDButton` is device serial numver(DSN). You can chage DSN. If you change DSN, you should change `COMMAND_TOPIC`, `RESULT_TOPIC` in the `led_button.c`
 
 You should create Thing named `LEDButton12345670` in the AWS IoT.
 
