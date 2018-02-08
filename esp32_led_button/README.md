@@ -42,12 +42,9 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 }
 </code></pre>
 
-"operation_code"
-
+<U>"operation_code"</U>
 0 -> LED OFF
-
 1 -> LED ON
-
 2 -> Change operation key
 
 ### 'LEDButton<DSN>/result' topic
@@ -62,12 +59,9 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 
 ## Control LED by pressed boot button
 
-1. User press boot button.
-
-2. Updated `Thing Shadow' in the AWS IoT.
-
-3. Changed led status, only if `Thing Shadow` update success.
-
+1. User press boot button.  
+2. Updated `Thing Shadow' in the AWS IoT.  
+3. Changed led status, only if `Thing Shadow` update success.  
 4. To report result to Android app client, published `LEDButton<DSN>/result` topic.
 
 ## Control LED by Android app client
