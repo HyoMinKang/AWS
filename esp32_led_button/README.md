@@ -42,9 +42,9 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 }
 </code></pre>
 
-<U>"operation_code"</U>
-0 -> LED OFF
-1 -> LED ON
+<U>"operation_code"</U>  
+0 -> LED OFF  
+1 -> LED ON  
 2 -> Change operation key
 
 ### 'LEDButton<DSN>/result' topic
