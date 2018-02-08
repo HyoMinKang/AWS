@@ -82,4 +82,4 @@ Entered new operation key. This is valid, only if "operation_code" is 2.
 
 ### As mentioned earlier, [this project does not subscribe `delta`](https://github.com/JoonDong2/AWS/tree/master/esp32_led_button#this-project-does-not-subscribe-delta-of-thing-shadow-for-receiving-command-from-android-app-client-because-operation-key-is-included-in-the-command-unlike-thing_shadow-example-if-operation-key-is-included-in-the-thing-shadow-it-may-be-subscribed-or-published-by-any-clients).
 
-### All of operation is executed when "operation_key" sent from Android app client is matched with operation key saved in the `Thing`(this project).
+### All of the operations are executed when "operation_key" sent from Android app client is matched with operation key saved in the `Thing`(this project).
