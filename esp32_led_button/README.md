@@ -2,7 +2,7 @@
 
 This project, implemented on ESP-IDF, communicate with Android app client through AWS IoT and is responsible for `Thing` client.
 
-To do this, it is used subscribing, publishing and getting/updating shadow functionalities of the [AWS IoT C SDK](https://github.com/aws/aws-iot-device-sdk-embedded-C).
+To do this, subscribing, publishing and getting/updating shadow of the [AWS IoT C SDK](https://github.com/aws/aws-iot-device-sdk-embedded-C) are used.
 
 ## Video
 
