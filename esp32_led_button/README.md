@@ -42,6 +42,11 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 }
 </code></pre>
 
+"operation_code"
+0 -> LED OFF
+1 -> LED ON
+2 -> Change operation key
+
 ### 'LEDButton<DSN>/result' topic
 
 <pre><code>
@@ -64,13 +69,7 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 
 ## Control LED by Android app client
 
-1. Android app client(AAC) publish `LEDButton<DSN>/command` topic. "operation_data" is not used at this time.
-<pre><code>
-operation_code
-0 -> LED OFF
-1 -> LED ON
-2 -> Change operation key
-</code></pre>
+1. Android app client(AAC) publish `LEDButton<DSN>/command` topic.
 
 2. aa
 
