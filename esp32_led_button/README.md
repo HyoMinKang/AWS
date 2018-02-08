@@ -42,7 +42,7 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 }
 </code></pre>
 
-++&#34;operation_code&#34;++  
+"operation_code"
 0 -> LED OFF  
 1 -> LED ON  
 2 -> Change operation key
@@ -62,13 +62,14 @@ This project does not subscribe `delta` of `Thing Shadow` for receiving command 
 1. User press boot button.  
 2. Updated `Thing Shadow' in the AWS IoT.  
 3. Changed led status, only if `Thing Shadow` update success.  
-4. To report result to Android app client, published `LEDButton<DSN>/result` topic.
+4. Published `LEDButton<DSN>/result` topic to report result to 1Android app client1, 
 
 ## Control LED by Android app client
 
-1. Android app client(AAC) publish `LEDButton<DSN>/command` topic.
-
-2. aa
+1. `Thing`(this project) subscribe `LEDButton<DSN>/command` topic.  
+2. `Android app client` publish `LEDButton<DSN>/command` topic("operation_code" is 0(LED OFF) or 1(LED ON) at this time).  
+3. `Thing` update `Thing Shadow` in the AWS IoT according to command, then change LED status only if `Thing Shadow` update success.  
+4. `Thing` publish `LEDButton<DSN>/result` topic to report result to Android app client.  
 
 ### in progress..
 
