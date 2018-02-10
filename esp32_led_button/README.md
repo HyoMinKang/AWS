@@ -11,9 +11,10 @@ This blog is written Korean, but I have plan to translate to English.
 
 ## Preparations
 
-You must install private key and certificate and enter custom endpoint.
-
+You have to install private key and certificate and enter custom endpoint in the ESP32.  
 To do this, see the README.md in the parent directory.
+
+Also you have to create policy like [this line](https://github.com/JoonDong2/AWS/tree/master/esp32_led_button#policy-in-the-aws-iot) in the AWS IoT, and attach this policy to the certificate downloaded to the ESP32.
 
 ## Set Thing Name
 
