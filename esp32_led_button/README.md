@@ -89,7 +89,7 @@ Entered new operation key. This is valid, only if "operation_code" is 2.
 
 ### All of the operations are executed only when "operation_key" sent from `Android app client` is matched with operation key saved in the `Thing`(this project).
 
-# Policy in the AWS IoT
+## Policy in the AWS IoT
 
 <pre><code>
 {
